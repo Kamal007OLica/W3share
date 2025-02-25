@@ -1,4 +1,4 @@
 # W3share
 
-![W3Share Architecture](https://github.com/user-attachments/assets/5073b820-1a27-4374-87e0-1e26e3f95f2e)
+  ![jjo](https://github.com/user-attachments/assets/1ca0c341-1578-4e6f-a1d8-f6dcbaa3e57e)
 
