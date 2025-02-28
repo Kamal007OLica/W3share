@@ -1,4 +1,6 @@
 # W3share
 
-  ![jjo](https://github.com/user-attachments/assets/1ca0c341-1578-4e6f-a1d8-f6dcbaa3e57e)
 
+<p align="center">
+  <img width="460" height="300" src="(https://github.com/user-attachments/assets/5b38ff44-112d-43c1-babf-8831a2468928)">
+</p>
