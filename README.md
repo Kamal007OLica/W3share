@@ -43,6 +43,8 @@ This repository contains the code and documentation for a decentralized applicat
 - **Blockchain**: Ethereum (Smart Contracts)
 - **APIs**: RESTful API for file uploads and retrieval
 
+![jjo](https://github.com/user-attachments/assets/7dd57ce9-4fc4-4b54-b660-4423487f4639)
+
 ---
 
 ## **Key Features** ✨
@@ -108,3 +110,4 @@ Decentralized technologies are reshaping the future of data storage and ownershi
 ---
 
 Let me know if you’d like further customization or additional sections! 😊
+
