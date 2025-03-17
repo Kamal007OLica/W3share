@@ -4,6 +4,8 @@
 
 W3Share is a cutting-edge decentralized application (dApp) designed to revolutionize data storage by combining the power of **IPFS (InterPlanetary File System)** and **Blockchain** technology. Built with **Next.js**, this project offers a secure, tamper-proof solution for storing and retrieving data. Users can upload files, store them on **web3.storage (IPFS)**, and register the IPFS hash on the blockchain through smart contracts, ensuring data integrity and transparency.
 
+![image](https://github.com/user-attachments/assets/b5417dae-70cd-40c4-a2fc-42f49b09d066)
+
 ---
 
 ## Key Features
