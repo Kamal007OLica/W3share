@@ -1,51 +1,62 @@
 # W3Share - Decentralized Data Storage with IPFS and Blockchain 🌐
 
-## Overview
+## Overview 🌍
 
-W3Share is a cutting-edge decentralized application (dApp) designed to revolutionize data storage by combining the power of **IPFS (InterPlanetary File System)** and **Blockchain** technology. Built with **Next.js**, this project offers a secure, tamper-proof solution for storing and retrieving data. Users can upload files, store them on **web3.storage (IPFS)**, and register the IPFS hash on the blockchain through smart contracts, ensuring data integrity and transparency.
+**W3Share** is a decentralized application (dApp) that leverages **IPFS (InterPlanetary File System)** and **Blockchain** technology to provide a secure, tamper-proof data storage solution. Built with modern web technologies, W3Share allows users to upload files, store them on IPFS, and register the IPFS hash on the blockchain for immutable proof of storage.
 
-![image](https://github.com/user-attachments/assets/b5417dae-70cd-40c4-a2fc-42f49b09d066)
 
----
+ ![image 275@2x](https://github.com/user-attachments/assets/4d4056d5-8409-4bbf-8481-9f0c2d599cd5) 
 
-## Key Features
-
-- **Decentralized Storage**: Leverage IPFS via **web3.storage** for secure and distributed data storage.
-- **Blockchain Integration**: Immutably store file hashes on the blockchain for enhanced security and transparency.
-- **Next.js Backend API**: Efficiently handle file uploads and interact with IPFS.
-- **User-Friendly Interface**: Easily upload and retrieve files through a seamless client-side experience.
-- **Tamper-Proof Records**: Ensure data integrity and verify ownership with blockchain-backed records.
 
 ---
 
-## Technology Stack
+## Features ✨
 
-- **Next.js**: A powerful framework for building the API and client-side interface.
-- **web3.storage**: A decentralized storage solution based on IPFS.
-- **Smart Contracts**: Blockchain-based mechanisms for recording and verifying data.
-- **Ethereum / Polygon**: Blockchain networks used for storing IPFS hashes.
-
----
-
-## How It Works
-
-1. **Client Interaction**: Users interact with the application through a web interface.
-2. **Data Upload**: Files are uploaded via an API request to the `/api/uploadData` endpoint.
-3. **IPFS Storage**: The data is stored on **web3.storage (IPFS)**, generating a unique IPFS hash.
-4. **Blockchain Recording**: The IPFS hash is recorded on the blockchain using a smart contract.
-5. **Data Retrieval**: Users can retrieve and verify stored data using the IPFS hash.
+- **Decentralized Storage**: Securely store files on IPFS via **web3.storage**.
+- **Blockchain Integration**: Immutably record file hashes on the blockchain for transparency and security.
+- **User-Friendly Interface**: Built with **React** for a seamless user experience.
+- **JWT Authentication**: Secure API interactions with JSON Web Tokens (JWT).
+- **Tamper-Proof Records**: Ensure data integrity and ownership verification.
 
 ---
 
-## Getting Started
+## Tech Stack 🛠️
+
+- **React**: Frontend framework for building the user interface.
+- **IPFS**: Decentralized storage solution for distributed data storage.
+- **Blockchain**: Smart contracts for recording and verifying data storage.
+- **JWT**: Secure authentication for API interactions.
+
+---
+
+## Architecture Overview 🏗️
+
+
+1. **Client**: The user interface where users interact with the application.
+2. **API Request**: Users send requests to upload or retrieve data.
+3. **Next.js**: Handles the backend logic and processes API requests.
+4. **POST Request**: Data is sent to the `/api/uploadData` endpoint.
+5. **API Response**: The server responds with the IPFS hash and blockchain transaction details.
+6. **web3.storage**: Stores the data on IPFS and generates a unique hash.
+7. **Smart Contract**: Records the IPFS hash on the blockchain for immutable proof.
+
+Here’s the architecture diagram for W3Share:
+
+<img src="https://github.com/user-attachments/assets/04e3a2af-d633-4faf-b6e1-5d861bad0fec" alt="W3Share Architecture" height="700px" />  
+
+This diagram illustrates how data flows through the system, from the client to IPFS and the blockchain. 
+
+
+## Getting Started 🚀
 
 ### Prerequisites
 
 - **Node.js** (version 16.x or higher)
 - **MetaMask** or any compatible Web3 wallet
-- **Infura/Alchemy API key** (optional for blockchain interactions)
+- **JWT Token**: Required for secure API interactions.
+- **Gateway Address**: Dedicated gateway address for IPFS.
 
-### Installation Steps
+### Installation
 
 1. Clone the repository:
    ```bash
@@ -53,63 +64,43 @@ W3Share is a cutting-edge decentralized application (dApp) designed to revolutio
    cd W3share
    ```
 
-2. Install the required dependencies:
+2. Install dependencies:
    ```bash
    npm install
    ```
 
-3. Set up the environment:
-   ```bash
-   cp .env.example .env
-   ```
-   Add your API keys and contract addresses to the `.env` file.
+3. Set up your environment:
+   - Add your **JWT token** and **dedicated gateway address** in the appropriate configuration files.
 
-4. Start the development server:
+4. Run the application:
    ```bash
-   npm run dev
+   npm start
    ```
 
 ---
 
-## Usage Instructions
+## Usage 📂
 
-1. Open the application in your browser at `http://localhost:3000`.
-2. Connect your Web3 wallet (e.g., MetaMask or WalletConnect).
+1. Open the application in your browser (typically `http://localhost:3000`).
+2. Connect your Web3 wallet (e.g., MetaMask).
 3. Upload a file to store it on IPFS.
 4. The IPFS hash will be recorded on the blockchain.
 5. Retrieve and verify your stored data using the IPFS hash.
 
 ---
 
-## Deploying the Smart Contract
-
-To deploy the smart contract:
-
-1. Compile the contract:
-   ```bash
-   npx hardhat compile
-   ```
-
-2. Deploy the contract to your desired network:
-   ```bash
-   npx hardhat run scripts/deploy.js --network goerli  # Replace 'goerli' with your preferred network
-   ```
-
----
-
-## Contributing to W3Share
+## Contributing 🤝
 
 We welcome contributions! Here’s how you can get involved:
 
 1. Fork the repository.
-2. Create a new branch for your feature (`feature-name`).
+2. Create a new branch (`feature-name`).
 3. Commit your changes (`git commit -m "Add feature"`).
 4. Push your branch (`git push origin feature-name`).
 5. Open a pull request.
 
 ---
 
-## License
+## License 📜
 
-W3Share is licensed under the **MIT License**. For more details, see the [LICENSE](LICENSE) file.
-
+This project is licensed under the **The Unlicense**. This means you can freely use, modify, and distribute the content without any restrictions. For more details, see the [LICENSE](LICENSE) file.
